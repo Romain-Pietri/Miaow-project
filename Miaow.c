@@ -78,18 +78,15 @@ void Mioawtosentense(char *miaow){
         }
         
     }
-    //printf("%s\n",miaow);
 }
-//main, scanf entre 0 et 1, le 1 cree une phrase, le 0 cree un miaow
 int main(){
     char sentence[256];
     char miaow[6]="miaow";
     int i;
     int choice;
     
-    printf("1 pour transformer en Miaow, 0 pour revenir logique\n");
+    printf("1 pour transformer en Miaow, 0 pour revenir logique MIAOW MIAOW\n");
     scanf("%d",&choice);
-    //ouvre le fichier miaow.txt et lit ce qu'il y a dedans et le stock dans sentence
     FILE *fichier = NULL;
     fichier = fopen("miaow.txt", "r");
     if(fichier!=NULL){
@@ -97,7 +94,7 @@ int main(){
         fclose(fichier);
     }
     else{
-        printf("erreur ouverture fichier\n");
+        printf(" MIAOW erreur ouverture fichier MIAOW\n");
     }
     if(choice==1){
         miaowsentenceintoMiaow(sentence);
